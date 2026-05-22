@@ -68,15 +68,7 @@ function App() {
     if (updates.comments) setComments(updates.comments);
 
     // 2. Synchronize to Python backend db.json
-    try {
-      await fetch('/api/save', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(updates)
-      });
-    } catch (err) {
-      console.error("Sync backup failed", err);
-    }
+   
   };
 
   // 3. Theme & dark class injection listener
