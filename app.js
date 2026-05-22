@@ -66,10 +66,7 @@ function App() {
     if (updates.customFoods) setCustomFoods(updates.customFoods);
     if (updates.blogs) setBlogs(updates.blogs);
     if (updates.comments) setComments(updates.comments);
-
-    // 2. Synchronize to Python backend db.json
-   
-  };
+};
 
   // 3. Theme & dark class injection listener
   useEffect(() => {
