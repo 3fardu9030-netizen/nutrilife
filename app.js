@@ -52,7 +52,7 @@ function App() {
           setLoading(false);
           const loader = document.getElementById("initial-loader");
           if (loader) loader.remove();
-        }, 1200);
+        }, 0);
       }
     }
     loadData();
